@@ -1,0 +1,33 @@
+npm init
+npm i nodemon --save-dev
+npm install express --save
+npm i mongoose --save
+npm i body-parser --save
+npm i jsonwebtoken --save
+
+
+routers-module:
+https://blog.csdn.net/houyanhua1/article/details/79486609
+https://www.jianshu.com/p/ccac60e10d04
+
+send json:
+var app = http.createServer(function(req,res){
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ a: 1 }));
+});
+
+
+export and import in file.json : 
+https://devstory.net/10279/importation-et-exportation-de-la-base-de-donnees-mongodb
+
+in \MongoDB\bin
+mongoexport -d database_name - c collection_name -o outfile.json
+mongoexport -d dadi -c students -o outfile.json
+
+mongoimport -d database_name -c collection_name outfile.json
+mongoimport -d dadi -c students outfile.json
+
+
+
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiaWF0IjoxNjA5NTk3NzM4fQ.32BNA8PGZJGEzceIPB0kGbnQY0cM7BboFLo59e4Zy4E
