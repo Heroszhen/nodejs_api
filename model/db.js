@@ -9,8 +9,7 @@ exports.getConnection = function(){
 		db.once('open', function() {
 		  console.log("Connected");
 		});
-	})
-	.catch(err=>console.log(err));
+	}).catch(err=>console.log(err));
 	
 };
 
