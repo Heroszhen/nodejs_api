@@ -6,7 +6,7 @@ const routes = require("./routes/routes.js");
 //db.getConnection();
 
 const fs = require("fs");
-const certFileBuf = fs.readFileSync("./docs/ec2-mongodb.pem");
+const certFileBuf = fs.readFileSync("../rds-combined-ca-bundle.pem");
 // Set up mongoose connection
 var mongoose = require("mongoose");
 var dev_db_url = require("./config/config.js").url_mongodb;
